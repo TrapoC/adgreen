@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdGreen - Eco-Friendly Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-4">
+          <img src="logo.png" alt="AdGreen Logo" class="h-8" />
+          <span class="text-xl font-bold">AdGreen</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="hover:text-gray-400">About</a>
+          <a href="#achievements" class="hover:text-gray-400">Achievements</a>
+          <a href="#products" class="hover:text-gray-400">Products</a>
+          <a href="#testimonials" class="hover:text-gray-400">Testimonials</a>
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+        <a
+          href="#"
+          class="hidden md:inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200"
+        >
+          Get Started
+        </a>
+        <button
+          class="md:hidden text-white focus:outline-none"
+          id="menu-toggle"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="md:hidden bg-black text-white"
+        id="mobile-menu"
+        style="display: none"
+      >
+        <a href="#about" class="block px-4 py-2 hover:bg-gray-800">About</a>
+        <a href="#achievements" class="block px-4 py-2 hover:bg-gray-800"
+          >Achievements</a
+        >
+        <a href="#products" class="block px-4 py-2 hover:bg-gray-800"
+          >Products</a
+        >
+        <a href="#testimonials" class="block px-4 py-2 hover:bg-gray-800"
+          >Testimonials</a
+        >
+        <a href="#contact" class="block px-4 py-2 hover:bg-gray-800">Contact</a>
+      </div>
+    </nav>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.style.display =
+          mobileMenu.style.display === "none" || mobileMenu.style.display === ""
+            ? "block"
+            : "none";
+      });
+    </script>
+
+    <!-- Hero Section -->
+    <header class="bg-green-700 text-white">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl font-extrabold">Welcome to AdGreen</h1>
+        <p class="mt-6 text-xl">
+          Innovating eco-friendly solutions for a sustainable future
+        </p>
+        <a
+          href="#about"
+          class="mt-8 inline-block bg-white text-green-700 px-8 py-4 rounded-lg font-semibold shadow-lg hover:bg-gray-100"
+          >Learn More</a
+        >
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">About Us</h2>
+        <p class="mt-6 text-center text-gray-600 leading-relaxed">
+          At AdGreen, we are committed to creating eco-friendly products that
+          help preserve the environment. Our mission is to make sustainability
+          accessible to everyone. We believe in innovation, responsibility, and
+          a greener tomorrow.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Achievements Section -->
+    <section id="achievements" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">Our Achievements</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold">10+ Awards</h3>
+            <p class="mt-2 text-gray-600">
+              Recognized for our sustainable innovations.
+            </p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold">500+ Clients</h3>
+            <p class="mt-2 text-gray-600">Trusted by businesses worldwide.</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold">1M+ Products</h3>
+            <p class="mt-2 text-gray-600">
+              Eco-friendly products delivered globally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section id="products" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">Our Products</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">Eco-Friendly Packaging</h3>
+            <p class="mt-4 text-gray-600">
+              Sustainable packaging solutions for businesses.
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">Reusable Bags</h3>
+            <p class="mt-4 text-gray-600">
+              Durable and stylish reusable bags for everyday use.
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">Biodegradable Products</h3>
+            <p class="mt-4 text-gray-600">
+              Products that decompose naturally, reducing waste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">What Our Clients Say</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600 italic">
+              "AdGreen's products have transformed the way we approach
+              sustainability. Highly recommended!"
+            </p>
+            <p class="mt-4 font-semibold text-gray-800">- Sarah Johnson</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600 italic">
+              "Their eco-friendly packaging is not only sustainable but also
+              cost-effective. A win-win!"
+            </p>
+            <p class="mt-4 font-semibold text-gray-800">- Michael Lee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">Contact Us</h2>
+        <form class="mt-8 max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 border rounded-lg"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded-lg"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="w-full px-4 py-2 border rounded-lg"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white px-4 py-2 rounded-lg font-semibold"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo and Description -->
+        <div>
+          <img src="logo.png" alt="AdGreen Logo" class="h-8 mb-4" />
+          <p class="text-gray-400">
+            Eco-Friendly Solutions for a Better Tomorrow.
+          </p>
+          <p class="mt-4 text-gray-500">AdGreen © 2023. All rights reserved.</p>
+        </div>
+        <!-- Explore Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Explore</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-white">About</a>
+            </li>
+            <li>
+              <a href="#achievements" class="text-gray-400 hover:text-white"
+                >Achievements</a
+              >
+            </li>
+            <li>
+              <a href="#products" class="text-gray-400 hover:text-white"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="text-gray-400 hover:text-white"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Resources Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-white"
+                >Contact</a
+              >
+            </li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white">Media Kit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
